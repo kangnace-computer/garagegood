@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'nav.dart';
 
 void main() {
@@ -10,8 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bottom navigation bar',
+      debugShowCheckedModeBanner: false,
       home: Nav(),
+      tit
     );
   }
 }

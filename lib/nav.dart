@@ -6,6 +6,10 @@ class Nav extends StatefulWidget {
 }
 
 class _NavState extends State<Nav> {
+  Widget showHoem() {
+    return Text('test');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,16 +20,14 @@ class _NavState extends State<Nav> {
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
         iconSize: 30.0,
-        
         backgroundColor: Colors.black,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.feed,
-              color: Colors.orange.shade700,
-            ),
-            title: Text('News')
-          ),
+              icon: Icon(
+                Icons.feed,
+                color: Colors.orange.shade700,
+              ),
+              title: Text('News')),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
